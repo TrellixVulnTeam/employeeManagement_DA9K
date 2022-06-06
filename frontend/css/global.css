@@ -1,0 +1,51 @@
+body {
+    background-color: #DAF7DC;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+input {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    background: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    border: none;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    background: #86BBD8;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    background-color: #2F4858;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+    height: 8%;
+    align-items: center;
+}
+
+.menus {
+    display: flex;
+    padding: 0.7rem 0.7rem;
+    gap: 1.5rem;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+section {
+    height: calc(92% - 10rem);
+    margin: 5rem 8rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/adicionar.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="" alt="">
+        </div>
+        <div class="menus">
+            <h5><a href="">HOME</a></h5>
+            <h5><a href="">COLABORADORES</a></h5>
+            <h5><a href="">FOLHA</a></h5>
+            <h5><a href="">ADICIONAR</a></h5>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="main_container">
+            <div>
+                <h1>Adicionar</h1>
+            </div>
+            <div>
+                <input type="text" placeholder="Nome" id="nome">
+                <input type="text" placeholder="Sobrenome" id="sobrenome">
+            </div>
+            <div>
+                <input type="number" placeholder="CPF" id="cpf">
+                <input type="date" placeholder="Data de Nascimento" id="date">
+            </div>
+            <div>
+                <input type="number" placeholder="Agencia" id="agencia">
+                <input type="number" placeholder="Conta" id="conta">
+            </div>
+            <div class="last_row">
+                <input type="number" placeholder="Remuneração" id="remuneracao">
+                <button onclick="adicionar()">Confirmar</button>
+            </div>
+        </div>
+    </section>
+    <script src="./js/adicionar.js"></script>
+</body>
+</html>
