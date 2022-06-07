@@ -19,4 +19,8 @@ async function cadastrarUsuario(req, res) {
     }
 }
 
-module.exports = cadastrarUsuario;
+async function pegarUsuarios(req, res) {
+
+}
+
+module.exports = cadastrarUsuario, pegarUsuarios;
