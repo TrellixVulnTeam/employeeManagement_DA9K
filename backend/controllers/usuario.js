@@ -24,5 +24,7 @@ async function pegarUsuarios(req, res) {
     return res.json(usuarios);
 }
 
-module.exports = cadastrarUsuario
-module.exports = pegarUsuarios
+module.exports = {
+    cadastrarUsuario,
+    pegarUsuarios
+}

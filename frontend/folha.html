@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/folha.css">
     <title>Folha</title>
 </head>
-<body>
+<body onload="load()">
     <nav>
         <div>
             <img src="" alt="">
@@ -31,22 +31,18 @@
         </div>
         <main>
             <table>
-                <tr>
-                    <th class="cpf">CPF</th>
-                    <th class="ag">Agencia</th>
-                    <th class="cc">Conta</th>
-                    <th class="nome">Nome</th>
-                    <th class="valor">Valor</th>
-                </tr>
-                <tr>
-                    <td class="cpf">16853096746</th>
-                    <td class="ag">1123</td>
-                    <td class="cc">327842</td>
-                    <td class="nome">Gabriel Yin</td>
-                    <td class="valor">R$ 2300,00</td>
-                </tr>
+                <tbody id="display">
+                    <tr>
+                        <th class="cpf">CPF</th>
+                        <th class="ag">Agencia</th>
+                        <th class="cc">Conta</th>
+                        <th class="nome">Nome</th>
+                        <th class="valor">Valor</th>
+                    </tr>
+                </tbody>
             </table>
         </main>
     </section>
+    <script src="./js/folha.js"></script>
 </body>
 </html>
