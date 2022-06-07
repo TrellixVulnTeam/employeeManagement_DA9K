@@ -20,7 +20,9 @@ async function cadastrarUsuario(req, res) {
 }
 
 async function pegarUsuarios(req, res) {
-
+    const usuarios = await Usuario.findAll();
+    return res.json(usuarios);
 }
 
-module.exports = cadastrarUsuario, pegarUsuarios;
+module.exports = cadastrarUsuario
+module.exports = pegarUsuarios
