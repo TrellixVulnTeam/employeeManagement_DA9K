@@ -1,9 +1,11 @@
 function buscar() {
     let nomeBuscar = document.getElementById('nomeBuscar').value;
     let cpfBuscar = document.getElementById('cpfBuscar').value;
-    console.log(nomeBuscar, cpfBuscar);
+    nomeBuscar = nomeBuscar.length == 0 ? ' ' : nomeBuscar;
+    cpfBuscar = cpfBuscar.length == 0 ? ' ' : cpfBuscar;
+    alert(nomeBuscar)
     limparTabela();
-    fetch(`http://localhost:3000/buscar/${nomeBuscar}/${cpfBuscar}`)
+    fetch(`http://localhost:3000/buscar/${nomeBuscar}/${cpfBuscar}/`)
     .then(response => response.json())
     .then(data => {
         data.forEach(element => {
