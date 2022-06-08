@@ -8,7 +8,7 @@ function load() {
                 <td class="cpf">${element.cpf}</td>
                 <td class="ag">${element.agencia}</td>
                 <td class="cc">${element.conta}</td>
-                <td class="nome">${element.nome}</td>
+                <td class="nome">${element.nome} ${element.sobrenome}</td>
                 <td class="valor">R$ ${element.remuneracao},00</td>
             </tr>`
         })

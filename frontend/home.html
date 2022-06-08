@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/home.css">
     <title>Home</title>
 </head>
-<body>
+<body onload="refresh()">
     <nav>
         <div>
             <img src="" alt="">
@@ -27,7 +27,7 @@
     <section class="main">
         <div class="col1">
             <div class="card">
-                <h1>R$57,432.00</h1>
+                <h1 id="mensal"></h1>
                 <h1>Mes</h1>
             </div>
             <div class="card">
@@ -36,7 +36,7 @@
         </div>
         <div class="col2">
             <div class="card">
-                <h1>R$24</h1>
+                <h1 id="colaboradores"></h1>
                 <h1>Colaboradores</h1>
             </div>
             <div class="card">
@@ -44,5 +44,6 @@
             </div>
         </div>
     </section>
+    <script src="./js/home.js"></script>
 </body>
 </html>
