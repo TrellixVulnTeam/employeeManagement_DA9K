@@ -1,4 +1,5 @@
 const Usuario = require('../models/Usuario');
+const { Op } = require('sequelize');
 
 async function cadastrarUsuario(req, res) {
     let authentication = true;
@@ -21,10 +22,23 @@ async function cadastrarUsuario(req, res) {
 
 async function pegarUsuarios(req, res) {
     const usuarios = await Usuario.findAll();
-    return res.json(usuarios);
+    return res.status(200).json(usuarios);
+}
+
+async function buscarUsuario(req, res) {
+    const usuario = await Usuario.findAll({
+        where: {
+          [Op.or]: [
+            { nome: req.params.nome },
+            { cpf: req.params.cpf }
+          ]
+        }
+      });
+    return res.status(200).json(usuario);
 }
 
 module.exports = {
     cadastrarUsuario,
-    pegarUsuarios
+    pegarUsuarios,
+    buscarUsuario
 }

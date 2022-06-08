@@ -5,4 +5,6 @@ const router = express.Router();
 
 router.post('/cadastrar', usu.cadastrarUsuario);
 router.get('/pegar', usu.pegarUsuarios);
+router.get('/buscar/:nome/:cpf', usu.buscarUsuario);
+
 module.exports = router

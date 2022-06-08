@@ -26,13 +26,24 @@
     </nav>
     <section class="main">
         <div class="mainRow">
-            <input type="text" placeholder="Nome" id="nome">
-            <input type="text" placeholder="CPF" id="cpf">
-            <button>Buscar</button>
+            <input type="text" placeholder="Nome" id="nomeBuscar">
+            <input type="text" placeholder="CPF" id="cpfBuscar">
+            <button onclick="buscar()">Buscar</button>
         </div>
         <main>
-
+            <table>
+                <tbody id="display">
+                    <tr>
+                        <th class="cpf">CPF</th>
+                        <th class="ag">Agencia</th>
+                        <th class="cc">Conta</th>
+                        <th class="nome">Nome</th>
+                        <th class="valor">Valor</th>
+                    </tr>
+                </tbody>
+            </table>
         </main>
     </section>
+    <script src="./js/colaboradores.js"></script>
 </body>
 </html>

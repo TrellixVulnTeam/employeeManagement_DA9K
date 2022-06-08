@@ -3,6 +3,7 @@ main {
     background-color: #2F4858;
     height: 100%;
     padding: 2rem;
+    overflow: auto;
 }
 
 .main {
@@ -23,4 +24,39 @@ main {
 .mainRow button {
     flex: 1;
     cursor: pointer;
+}
+
+table {
+    flex: 1;
+    background-color: #FFFFFF;
+}
+
+tr {
+    display: flex;
+}
+
+th, td {
+    border-style: solid;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+.cpf {
+    flex: 1;
+}
+
+.ag {
+    flex: 1;
+}
+
+.cc {
+    flex: 1;
+}
+
+.nome {
+    flex: 3;
+}
+
+.valor {
+    flex: 1;
 }
